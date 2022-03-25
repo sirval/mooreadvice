@@ -14,7 +14,7 @@
         </div>
 
         <div class="col-lg-6 intro-img order-lg-last order-first" data-aos="zoom-out" data-aos-delay="200">
-          <img src="{{ secure_asset('assets/img/intro-img.svg') }}" alt="Background Image" class="img-fluid">
+          <img src="{{ asset('assets/img/intro-img.svg') }}" alt="Background Image" class="img-fluid">
         </div>
       </div>
 
@@ -28,7 +28,7 @@
 
         <div class="col-lg-5 col-md-6">
           <div class="news-img" data-aos="fade-right" data-aos-delay="100">
-            <img src="{{ secure_asset('assets/img/about-img.jpg') }}" alt="" >
+            <img src="{{ asset('assets/img/about-img.jpg') }}" alt="" >
 
           </div>
         </div>

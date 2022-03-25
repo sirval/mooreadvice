@@ -14,7 +14,11 @@ class TaskController extends Controller
      */
     public function index()
     {
-        return view('admin.show');
+        $task = Task::all()->sortByDesc('id'); // gets all record in news table in descending order
+        
+        return view('admin.index', [
+            'task' => $task,
+        ]);
     }
 
     /**
@@ -97,6 +101,7 @@ class TaskController extends Controller
      */
     public function destroy(Task $task)
     {
+        $task = Task::find($task->id);
         $task->delete();
         
         return redirect()->route('home')

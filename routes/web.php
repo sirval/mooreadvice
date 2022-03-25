@@ -23,9 +23,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/admin', [TaskController::class, 'index'])->name('admin.index');
 Route::get('/admin/{task}', [TaskController::class, 'show'])->name('admin.show');
 Route::get('/admin/create/task', [TaskController::class, 'create'])->name('admin.create');
 Route::post('/admin/create/task',[TaskController::class, 'store'])->name('admin.store');
 Route::get('/admin/{task}/edit', [TaskController::class, 'edit'])->name('admin.edit');
 Route::put('/admin/{task}/edit', [TaskController::class, 'update'])->name('admin.update');
-Route::delete('/home',[TaskController::class, 'destroy'])->name('admin.destroy');
+Route::delete('/admin/delete/{task}', [TaskController::class, 'destroy'])->name('admin.destroy');
