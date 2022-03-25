@@ -20,8 +20,8 @@
                     </a>
                     <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="/admin/create/news">New</a>
-                            <a class="nav-link" href="/admin">All</a>
+                            <a class="nav-link" href="/admin/create/task">New</a>
+                            <a class="nav-link" href="{{ route('home') }}">All</a>
                         </nav>
                     </div>
                    
